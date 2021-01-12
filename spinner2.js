@@ -3,7 +3,6 @@ const animation = (array,delay) => {
     for (let i = 0; i < array.length; i++){
       process.stdout.write(array[0]);
       let newArr = array.slice(1);
-      //printAni(array, i)
       animation(newArr, delay);
     }
   }, delay);
